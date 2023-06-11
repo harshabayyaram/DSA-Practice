@@ -11,6 +11,7 @@ public class Patterns {
 		pattern1(n);
 		System.out.println();
 		pattern2(n);
+		sc.close();
 
 	}
 	
