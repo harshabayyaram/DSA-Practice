@@ -1,5 +1,7 @@
 /*
 
+https://www.codingninjas.com/studio/library/30-most-common-accenture-coding-questions
+
 1. Execute the given function.
 def differenceofSum(n.m)
 
