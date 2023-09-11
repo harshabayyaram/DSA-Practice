@@ -95,12 +95,87 @@ console.log(largArr(arr,arr.length));
 
 ## Java
 ```java
+public class Solution {
 
+
+    public static int secondlargest(int a[],int n){
+        int largest = a[0];
+        int sslargest = -1;
+        for(int i=1;i<n;i++){
+            if(a[i]>largest){
+                sslargest = largest;
+                largest = a[i];
+            }else if(a[i]<largest && a[i]>sslargest){
+                sslargest = a[i];
+            }
+        }
+        return sslargest;
+    }
+    public static int secondSmallest(int a[],int n){
+        int smallest = a[0];
+        int ssmallest = Integer.MAX_VALUE;
+
+        for(int i=1;i<n;i++){
+            if(a[i]<smallest){
+                ssmallest = smallest;
+                smallest = a[i];
+            }else if(a[i] != smallest && a[i]<ssmallest){
+                ssmallest = a[i];
+            }
+        }
+        return ssmallest;
+    }
+    
+    public static int[] getSecondOrderElements(int n, int []a) {
+        // Write your code here.
+        int slargest = secondlargest(a,n);
+        int ssmallest = secondSmallest(a,n);
+        int result[] = {slargest,ssmallest};
+        return result;
+    }
+}
 
 ```
 
 
 ## Javascript
 ```javascript
+const secondLargest = (a,n) =>{
+    var largest = a[0];
+    var slargest = -1;
+    for(var i=1;i<n;i++){
+        if(a[i]>largest){
+            sslargest = largest;
+            largest = a[i];
+        }else if(a[i]<largest && a[i]>sslargest){
+            sslargest = a[i]
+        }
+    }
+    return sslargest;
+}
 
+const secondSmallest=(a,n)=>{
+    var smallest = a[0];
+    var ssmallest = Number.MAX_SAFE_INTEGER;
+    for(var i=1;i<n;i++){
+        if(a[i]<smallest){
+            ssmallest = smallest;
+            smallest = a[i];
+        }else if(a[i] != smallest && a[i]<ssmallest){
+            ssmallest = a[i];
+        }
+    }
+    return ssmallest;
+}
+
+
+
+
+
+const arr = [1,2,3,121,5,6,7];
+
+var slargest = secondLargest(arr,arr.length);
+var ssmallest = secondSmallest(arr,arr.length);
+
+console.log(slargest,ssmallest);
 ```
