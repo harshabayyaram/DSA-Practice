@@ -25,7 +25,7 @@ public static int[] getSecondOrderElements(int n, int []a) {
     }
 
 ```
-
+## JavaScript
 ```javascript
 function largArr(arr,n){
     var largest =arr[0];
