@@ -83,7 +83,7 @@ function largArr(arr,n){
             sL = arr[i];
         }
     }
-    return a;
+    return sL;
 }
 
 
