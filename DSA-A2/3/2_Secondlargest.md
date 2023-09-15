@@ -180,3 +180,46 @@ var ssmallest = secondSmallest(arr,arr.length);
 
 console.log(slargest,ssmallest);
 ```
+## javascript code with return type array used
+
+```javascript
+const secondLargest = (a,n) =>{
+    var largest = a[0];
+    var slargest = -1;
+    for(var i=1;i<n;i++){
+        if(a[i]>largest){
+            sslargest = largest;
+            largest = a[i];
+        }else if(a[i]<largest && a[i]>sslargest){
+            sslargest = a[i]
+        }
+    }
+    return sslargest;
+}
+
+const secondSmallest=(a,n)=>{
+    var smallest = a[0];
+    var ssmallest = Number.MAX_SAFE_INTEGER;
+    for(var i=1;i<n;i++){
+        if(a[i]<smallest){
+            ssmallest = smallest;
+            smallest = a[i];
+        }else if(a[i] != smallest && a[i]<ssmallest){
+            ssmallest = a[i];
+        }
+    }
+    return ssmallest;
+}
+
+const arr = [1,2,3,121,5,6,7];
+
+var slargest = secondLargest(arr,arr.length);
+var ssmallest = secondSmallest(arr,arr.length);
+
+var res = [slargest,ssmallest];
+//or
+res.push(slargest);
+res.push(ssmallest);
+
+console.log(res);
+```
