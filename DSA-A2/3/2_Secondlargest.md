@@ -1,3 +1,5 @@
+Problem link : https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
 # Second largest number in array with bruteforce approach
 
 ## Java
