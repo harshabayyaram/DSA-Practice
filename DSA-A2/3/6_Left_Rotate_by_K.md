@@ -67,7 +67,9 @@ public class Solution {
         int j=0;
         for(int i=n-k;i<n;i++){
             // arr[i] = temp[j];
+	    // arr[i] = temp[i-(n-k)];
             arr.set(i,temp.get(j));
+            //arr.set(i,temp.get(i-(n-k)));
             j++;
         }
         return arr;
