@@ -106,15 +106,135 @@ console.log(Lr);
 
 # optimal approach
 
-## Java
+## Java with int[] arr
 ```java
-
+public class Main
+{
+    public static int[] reverse(int[] arr,int start,int end){
+        while(start<=end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+        return arr;
+    }
+    public static int[] LeftShiftArray(int[] arr,int n,int k){
+        reverse(arr,0,k-1);
+        reverse(arr,k,n-1);
+        reverse(arr,0,n-1);
+        return arr;
+    }
+	public static void main(String[] args) {
+		int k = 3;
+		int[] arr = {1,2,3,4,5,6,7};
+		int n= arr.length;
+		LeftShiftArray(arr,n,k);
+		for(int i=0;i<n;i++){
+		    System.out.print(arr[i]);
+		}
+	}
+}
 
 ```
 
+## Java with ArrayList<Integer> in coding ninjas
+```java
+import java.util.ArrayList;
 
-## Javascript
+public class Solution {
+    public static ArrayList<Integer> reverse(ArrayList<Integer> arr,int start,int end){
+        while(start<=end){
+            // int temp = arr[start];
+            int temp = arr.get(start);
+            // arr[start] = arr[end];
+            arr.set(start,arr.get(end));
+            // arr[end] = temp;
+            arr.set(end,temp);
+            start++;
+            end--;
+        }
+        return arr;
+    }
+	public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
+        int n =arr.size();
+        reverse(arr,0,k-1);
+        reverse(arr,k,n-1);
+        reverse(arr,0,n-1);
+        return arr;
+    }
+}
+
+```
+
+## Javascript 1
 ```javascript
+function reverse(arr,start,end){
+    while(start<=end){
+        var temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+    return arr;
+}
+
+function LeftShiftArray(arr,n,k){
+    reverse(arr,0,k-1);
+    reverse(arr,k,n-1);
+    reverse(arr,0,n-1);
+    return arr;
+}
+
+function main() {
+	var k = 3;
+	var arr = [1,2,3,4,5,6,7];
+	var n= arr.length;
+	
+	LeftShiftArray(arr,n,k);
+	for(let i=0;i<n;i++){
+	    console.log(arr[i]);
+	}
+}
+
+main();
+```
+
+
+## Javascript 2
+```javvascript
+function reverse(arr,start,end){
+    while(start<=end){
+        var temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+    return arr;
+}
+
+function LeftShiftArray(arr,n,k){
+    reverse(arr,0,k-1);
+    reverse(arr,k,n-1);
+    reverse(arr,0,n-1);
+    return arr;
+}
+
+function main() {
+	var k = 3;
+	var arr = [1,2,3,4,5,6,7];
+	var n= arr.length;
+	
+	var res = LeftShiftArray(arr,n,k);
+	for(let i=0;i<n;i++){
+	    console.log(res[i]);
+	}
+}
+
+main();
 
 ```
 
