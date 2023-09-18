@@ -76,18 +76,29 @@ public class Solution {
 ```
 ## Javascript
 ```javascript
+const LeftRotate = (arr,n,d) =>{
+    d = d%n;
+    let temp = [];
+    //add to temp [1,2,3]
+    for(let i=0;i<n;i++){
+        temp[i] = arr[i];
+    }
+    //move rem front [4,5,6,7]
+    for(let i=d;i<n;i++){
+        arr[i-d] = arr[i];
+    }
+    //add temp to arr
+    for(let i=n-d;i<n;i++){
+        arr[i] = temp[i-(n-d)];
+    }
+    return arr;
+};
 
-```
 
-
-# better approach
-## Java
-```Java
-
-
-```
-## JavaScript
-```javascript
+const arr = [1,2,3,4,5,6,7];
+var d =3;
+var Lr = LeftRotate(arr,arr.length,d);
+console.log(Lr);
 
 ```
 
