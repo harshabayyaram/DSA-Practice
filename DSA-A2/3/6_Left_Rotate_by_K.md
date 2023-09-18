@@ -1,16 +1,24 @@
 # bruteforce approach
 
-## Java
+## Java with int[] array
 ```java
-import java.util.ArrayList;
-
-public class Solution {
-	public static ArrayList<Integer> rotateArray(ArrayList<Integer> arr, int k) {
-        // Write your code here.
-        //rotate left
+public class Main
+{
+	public static void main(String[] args) {
+		int k = 3;
+		int n = 7;
+		int[] arr= {1,2,3,4,5,6,7};
+		rotateArray(arr,k);
+		for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+	}
+	
+	public static int[] rotateArray(int[] arr, int k) {
+        //rotate left problem
         int n =arr.length;
         k = k%n;
-        int[] temp = new int[k];
+        int[] temp = new  int[k];
         //move k elements into temp [1,2,3]
         for(int i=0;i<k;i++){
             temp[i] = arr[i];
@@ -30,8 +38,9 @@ public class Solution {
         return arr;
     }
 }
+
 ```
-## but we need arraylist in coding ninjas
+## Java with ArrayList<Integer> but we need arraylist in coding ninjas
 ```java
 import java.util.ArrayList;
 
