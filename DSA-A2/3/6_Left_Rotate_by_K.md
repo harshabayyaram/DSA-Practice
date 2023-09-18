@@ -204,7 +204,7 @@ main();
 
 
 ## Javascript 2
-```javvascript
+```javascript
 function reverse(arr,start,end){
     while(start<=end){
         var temp = arr[start];
