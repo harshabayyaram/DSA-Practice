@@ -1,0 +1,59 @@
+package com.harsha.patterns;
+
+import java.util.Scanner;
+
+public class Patterns {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a number : ");
+		int n = sc.nextInt();
+		pattern1(n);
+		System.out.println();
+		pattern2(n);
+		sc.close();
+
+	}
+	
+
+	static void pattern1(int n){
+//		*****
+//		*****
+//		*****
+//		*****
+// hiii 
+		for(int row = 1;row<=n;row++){
+			for(int col = 1;col <=n;col++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+	static void pattern2(int n){
+//		* 
+//		* * 
+//		* * * 
+//		* * * * 
+		for(int row = 1;row<=n;row++){
+			for(int col = 1;col <=row;col++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+	
+	static void pattern3(int n){
+//		*****
+//		*****
+//		*****
+//		*****
+		for(int row = 1;row<=n;row++){
+			for(int col = 1;col <=n;col++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+}
