@@ -4,6 +4,15 @@
 * * * * 
 * * * * * 
 * * * * * * 
+
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+
 ## java
 ```java
 public static void nForest(int n) {
