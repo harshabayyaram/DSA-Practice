@@ -4,7 +4,7 @@
 * * * * 
 * * * * * 
 * * * * * * 
-##java
+## java
 ```java
 public static void nForest(int n) {
         // Write your code here
@@ -31,7 +31,7 @@ for(let i =0;i<=5;i++){
 console.log(string);
 
 ```
-##python
+## python
 ```python
 def nForest(n:int) ->None:
     # Write your solution here.
