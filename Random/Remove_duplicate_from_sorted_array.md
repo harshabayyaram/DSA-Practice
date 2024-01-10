@@ -2,6 +2,7 @@
 ```java
 
 ```
+## javascript Leetcode
 ```javascript Leetcode
 var removeDuplicates = function(nums) {
     let rd = 0;
@@ -14,6 +15,7 @@ var removeDuplicates = function(nums) {
     return rd;
 };
 ```
+## javascript GFG
 
 ```javascript GFG
 class Solution{
