@@ -1,7 +1,11 @@
-# Remove duplicates from Sorted array
-# bruteforce approach
+Notes in : DSA-General-02 ( lines notebook new hyd)
 
-## Java
+# Remove duplicates from Sorted array
+
+## bruteforce approach
+
+### Java
+
 ```java
 import java.util.*;
 
@@ -20,9 +24,11 @@ public class Solution {
 	}
 }
 ```
-## Javascript
+
+### Javascript
+
 ```javascript
-onst removeDuplicates = (a,n) =>{
+const removeDuplicates = (a,n) =>{
     var sets = new Set();
     a.forEach(function(value){
         sets.add(value);
@@ -36,7 +42,9 @@ var rD = removeDuplicates(arr,arr.length);
 var res = [rD];
 console.log(res);
 ```
-## javascript with set to string
+
+#### javascript with set to string		
+
 ```javascript
 const removeDuplicates = (a,n) =>{
     var sets = new Set();
@@ -53,10 +61,29 @@ var rD = removeDuplicates(arr,arr.length);
 console.log(rD);
 ```
 
-# optimal approach
+## Java script changing the given array only
 
-## Java
+```javascript
+var sets = new Set();
+    let i = 0 ;
+    nums.forEach((num)=>{
+        if(!sets.has(num)){
+            sets.add(num);
+            nums[i] = num;
+            i++;
+        }
+    })
+    return i;
+}
+```
+
+## Optimal approach
+
+### Java
+
 ```java
+//https://www.codingninjas.com/studio/problems/remove-duplicates-from-sorted-array_1102307?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
 import java.util.*;
 
 public class Solution {
@@ -79,12 +106,30 @@ public class Solution {
 
 ```
 
+### JAVA 2 same approach
 
-## Javascript
+```java
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i=0;
+        for(int j=1;j<=nums.length-1;j++){
+            if(nums[j]!=nums[i]){
+                i++;
+                nums[i]=nums[j];
+            }
+        }
+        return i+1;
+    }
+}
+```
+
+### Javascript
+
 ```javascript
 var removeDuplicates = function(nums) {
     var i=0;
-    for(var j=0;j<nums.length;j++){
+    for(var j=1;j<nums.length;j++){
         if(nums[i]!==nums[j]){
             i++;
             nums[i] = nums[j];
@@ -97,5 +142,3 @@ const arr = [1,2,3,4,2,2,2,1];
 const res = removeDuplicates(arr);
 console.log(res);
 ```
-
-
