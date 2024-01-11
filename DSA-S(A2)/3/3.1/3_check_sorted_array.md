@@ -1,6 +1,7 @@
 # bruteforce approach
 
 ## Java
+
 ```java
 public class Solution {
     public static int isSorted(int n, int []a) {
@@ -19,7 +20,9 @@ public class Solution {
     }
 }
 ```
+
 ## Javascript
+
 ```javascript
 const checkSorted = (a,n)=>{
     for(var i=1;i<n;i++){
@@ -41,4 +44,5 @@ var isSorted = checkSorted(arr,arr.length);
 
 console.log(isSorted);
 ```
+
 bruteforce is the best

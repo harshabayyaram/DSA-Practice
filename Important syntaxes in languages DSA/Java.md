@@ -28,4 +28,12 @@ for(int i=0;i<arr.size();i++)){
 
 ```java
 length --> arr.length;
+sorting --> Arrays.sort(arr);
+```
+
+## Max and min
+
+```java
+int small = Integer.MAX_VALUE;
+int large = Integer.MIN_VALUE;
 ```

@@ -1,7 +1,9 @@
+ notes : DSA_GENEREL_08 ( lines noteshyd new)
 
 # Second largest number in array with bruteforce approach
 
 ## Java
+
 ```java
 public static int[] getSecondOrderElements(int n, int []a) {
         // Write your code here.
@@ -20,7 +22,9 @@ public static int[] getSecondOrderElements(int n, int []a) {
         return res;
     }
 ```
+
 ## Javascript
+
 ```javascript
 function largArr(arr,n){
         arr.sort((a,b)=>a-b)
@@ -40,9 +44,42 @@ const arr = [1,2,3,121,5,6,7];
 console.log(largArr(arr,arr.length));
 ```
 
-
 # Second Largest Number with better approach
+
 ## Java
+
+```java
+// new code coding ninjas https://www.codingninjas.com/studio/problems/ninja-and-the-second-order-elements_6581960?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+public class Solution {
+    public static int[] getSecondOrderElements(int n, int []a) {
+        // Write your code here.
+        int small = Integer.MAX_VALUE;
+        int secondsmall = Integer.MAX_VALUE;
+        int large = Integer.MIN_VALUE;
+        int secondlarge = Integer.MIN_VALUE;
+  
+        for(int i=0;i<n;i++){
+            small = Math.min(small,a[i]);
+            large = Math.max(large,a[i]);
+        }
+
+        for(int i=0;i<n;i++){
+            if(a[i]<secondsmall && a[i] != small){
+                secondsmall = a[i];
+            }
+            if(a[i]>secondlarge && a[i] != large){
+                secondlarge = a[i];
+            }
+        }
+        int[] res = new int[2];
+        res[0]=(secondlarge);
+        res[1]=(secondsmall);
+        return res;
+
+    }
+}
+```
+
 ```Java
 public static int[] getSecondOrderElements(int n, int []a) {
         // Write your code here.
@@ -64,11 +101,13 @@ public static int[] getSecondOrderElements(int n, int []a) {
         res[0] = secondLargest;
         return res;
 
-        
+    
     }
 
 ```
+
 ## JavaScript
+
 ```javascript
 function largArr(arr,n){
     var largest =arr[0];
@@ -91,6 +130,7 @@ const arr = [1,2,3,121,5,6,7];
 console.log(largArr(arr,arr.length));
 
 ```
+
 ## javascript code with return type array used
 
 ```javascript
@@ -135,10 +175,10 @@ res.push(ssmallest);
 console.log(res);
 ```
 
-
 # Second largest in array with optimal approach
 
 ## Java
+
 ```java
 public class Solution {
 
@@ -170,7 +210,7 @@ public class Solution {
         }
         return ssmallest;
     }
-    
+  
     public static int[] getSecondOrderElements(int n, int []a) {
         // Write your code here.
         int slargest = secondlargest(a,n);
@@ -182,8 +222,8 @@ public class Solution {
 
 ```
 
-
 ## Javascript
+
 ```javascript
 const secondLargest = (a,n) =>{
     var largest = a[0];

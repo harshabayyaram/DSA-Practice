@@ -19,6 +19,9 @@ for(let num of sets){
 ```java
 let arr = []
 let arr = new Array();
+Array with particular length and fillling with zeros --> take B is an array
+--> let vis = new Array(B.length).fill(0);
+
 arr.length; //array length
 arr.push(4); //adiing element in the last
 arr.pop(); // removing the last element
@@ -33,7 +36,21 @@ for(let i = 0 ;i<arr.length;i++){
 }
 arr.forEach((num)=>{log(num)})
 
+Sorting an array --> arr.sort((a,b) => a-b ) //ascending order
+                 --> arr.sort((a,b) => b-a ) //descending order
+
 
 ```
 
-## next
+## Strings
+
+```javascript
+
+```
+
+## Infinity --> Integer.MAX_VALUE / MIN_VALUE
+
+```javascript
+int small = Infinity;
+int large = -Infintiy;
+```
