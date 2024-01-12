@@ -48,7 +48,7 @@ Sorting an array --> arr.sort((a,b) => a-b ) //ascending order
 
 ```
 
-## Infinity --> Integer.MAX_VALUE / MIN_VALUE
+## MAX AND MIN VALUE --> Infinity --> Integer.MAX_VALUE / MIN_VALUE
 
 ```javascript
 int small = Infinity;

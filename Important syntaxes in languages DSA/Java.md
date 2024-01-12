@@ -31,7 +31,7 @@ length --> arr.length;
 sorting --> Arrays.sort(arr);
 ```
 
-## Max and min
+## Max and min values
 
 ```java
 int small = Integer.MAX_VALUE;
