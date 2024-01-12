@@ -17,6 +17,7 @@ for(let num of sets){
 ## Array
 
 ```java
+
 let arr = []
 let arr = new Array();
 Array with particular length and fillling with zeros --> take B is an array
@@ -39,6 +40,16 @@ arr.forEach((num)=>{log(num)})
 Sorting an array --> arr.sort((a,b) => a-b ) //ascending order
                  --> arr.sort((a,b) => b-a ) //descending order
 
+tostring-->
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Banana,Orange,Apple,Mango
+
+.join("") --> 
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(", ");
+Banana,Orange,Apple,Mango
 
 ```
 
