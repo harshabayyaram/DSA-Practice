@@ -29,6 +29,7 @@ arr.pop(); // removing the last element
 arr.unshift(0); //Adding element in the begining
 arr.shift(); //removing first element
 arr.slice(1,4); //accessing index 1 to 4
+const indexOfTwo = arr.indexOf(2)
 
 looping
 -------
