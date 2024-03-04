@@ -28,24 +28,22 @@ Constraints:
 
 */
 
-
-
 //User function Template for Java
 class Solution {
-    static String armstrongNumber(int n){
+    static String armstrongNumber(int n) {
         // code here
-        int real =n;
-        int sum=0;
-        while(n>0){
-            int val = n%10;
-            sum = sum + (val*val*val);
-            n = n/10;
+        int real = n;
+        int sum = 0;
+        while (n > 0) {
+            int val = n % 10;
+            sum = sum + (val * val * val);
+            n = n / 10;
         }
-        
+
         String str = "";
-        if(real==sum){
+        if (real == sum) {
             str += "Yes";
-        }else{
+        } else {
             str += "No";
         }
         return str;

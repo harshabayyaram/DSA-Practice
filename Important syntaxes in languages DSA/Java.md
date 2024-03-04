@@ -37,3 +37,11 @@ sorting --> Arrays.sort(arr);
 int small = Integer.MAX_VALUE;
 int large = Integer.MIN_VALUE;
 ```
+
+## String
+
+```java
+String s = Integer.toString(n);
+Strign length
+n2.length();
+```
