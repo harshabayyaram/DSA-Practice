@@ -1,6 +1,5 @@
-
-
 ## java
+
 ```java
 public class Solution {
     public static void seeding(int n) {
@@ -14,7 +13,9 @@ public class Solution {
     }
 }
 ```
+
 ## javascript
+
 ```javascript
 let string = ""
 
@@ -27,7 +28,9 @@ for(let i =1;i<=5;i++){
 
 console.log(string);
 ```
+
 ## python
+
 ```python
 def seeding(n: int) -> None:
     # Write your solution here.

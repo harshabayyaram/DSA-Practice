@@ -1,25 +1,28 @@
 Notes in : < page number and location >
 
-# Heading of problem
+# 
+$${\color{red}Heading-of-problem}$$
+---
+$${\color{blue}**Bruteforce-Approachh**}$$
 
-## Bruteforce approach
-
-### Java
+$${\color{yellow}Java}$$
 
 ```java
 // link of problem : 
 ```
 
-### Javascript
+$${\color{green}JavaScript}$$
 
 ```javascript
 // link of problem : 
 
 ```
 
-## Better approach
+---
 
-### Java
+$${\color{blue}**Better-Approachh**}$$
+
+$${\color{yellow}Java}$$
 
 ```Java
 // link of problem : 
@@ -27,16 +30,18 @@ Notes in : < page number and location >
 
 ```
 
-### JavaScript
+$${\color{green}JavaScript}$$
 
 ```javascript
 // link of problem : 
 
 ```
 
-## Optimal approach
+---
 
-### Java
+$${\color{blue}Optimal-Approachh}$$
+
+$${\color{yellow}Java}$$
 
 ```java
 // link of problem : 
@@ -44,7 +49,7 @@ Notes in : < page number and location >
 
 ```
 
-### Javascript
+$${\color{green}JavaScript}$$
 
 ```javascript
 // link of problem : 

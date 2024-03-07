@@ -1,6 +1,7 @@
 # bruteforce approach
 
 ## Java
+
 ```java
 import java.util.ArrayList;
 
@@ -25,7 +26,9 @@ public class Solution {
     }
 }
 ```
+
 ## Javascript
+
 ```javascript
 class Solution {
     pushZerosToEnd(arr,n){
@@ -38,18 +41,18 @@ class Solution {
                 j++;
             }
         }
-        
+      
         let nz = temp.length;
         //or we can use j instead
-        
+      
         for(let i=0;i<nz;i++){
             arr[i] = temp[i];
         }
-        
+      
         for(let i=nz;i<n;i++){
             arr[i] = 0;
         }
-        
+      
         return arr;
     }
 }
@@ -58,6 +61,7 @@ class Solution {
 # optimal approach using two pointer approach
 
 ## Java
+
 ```java
 import java.util.ArrayList;
 
@@ -86,8 +90,8 @@ public class Solution {
 
 ```
 
-
 ## Javascript
+
 ```javascript
 class Solution {
     pushZerosToEnd(arr,n){
@@ -100,7 +104,7 @@ class Solution {
             }
         }
         if(j==-1) return arr;
-        
+      
         for(let i=j+1;i<n;i++){
             if(arr[i] !== 0){
                 let temp = arr[i];
@@ -113,5 +117,3 @@ class Solution {
     }
 }
 ```
-
-

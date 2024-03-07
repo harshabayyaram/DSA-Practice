@@ -8,6 +8,27 @@ Notes in : DSA_General-15
 
 ```java
 // link of problem : 
+
+public class Solution {
+    public static int countDigits(int n) {
+        // Write your code here.
+        int num = n;
+        int temp =0;
+        int count = 0;
+
+        while (n > 0) {
+            temp = n % 10;
+            if (temp > 0) {
+                if (num % temp == 0) {
+                    count++;
+                }
+            }
+            n = n / 10;
+        }
+        return count;
+    }
+}
+
 ```
 
 ### Javascript

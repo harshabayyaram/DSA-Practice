@@ -44,4 +44,5 @@ int large = Integer.MIN_VALUE;
 String s = Integer.toString(n);
 Strign length
 n2.length();
+String s = "";
 ```
