@@ -1,37 +1,61 @@
-Notes in : DSA-general-15
 
-# Reverse a number
+Notes in : S-Step1.4-02
 
-## Bruteforce approach
+$$
+{\color{red}Reverse-A-Number}
+$$
 
-### Java
+---
+
+---
+
+$$
+{\color{blue}**Bruteforce-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
 
-static int rev(int n){
-	int reverse = 0;
-	while(n>0){
-		int r = n% 10;
-		reverse = reverse*+r;
-		n=n/10;
-	}
-	return reverse
+
+class HelloWorld {
+  
+    static int reverse(int n){
+        int x = n;
+        int reverse = 0;
+        while(x!=0){
+            int digit = x%10;
+            reverse = reverse*10+digit;
+            x= x/10;
+        }
+        return reverse;
+    }
+    public static void main(String[] args) {
+        int n = 12345;
+        System.out.println(n+" reverse is = "+reverse(n));
+    }
 }
 ```
 
-### Javascript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
 // link of problem : 
-
-function(n){
-	let reverse = 0;
-	while(n>0){
-		ler r = n%10;
-		reverse = reverse*10+r;
-		n = n /10;
-	}
-	return reverse;
+function reverse(n){
+    let x = n;
+    let reverse = 0;
+    while(x!=0){
+        let digit = x%10;
+        reverse = reverse*10+digit;
+        x=Math.floor(x/10);
+    }
+    return reverse;
 }
+
+
+console.log(reverse(12345));
 ```

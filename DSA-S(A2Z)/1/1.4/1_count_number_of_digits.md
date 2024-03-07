@@ -1,93 +1,146 @@
-Notes in : DSA_General-15
+Notes in : S-step1.4-page-01
 
-# Count number of digits
+$$
+{\color{red}COUNT-THE-DIGITS}
+$$
 
-## Bruteforce approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}**Bruteforce-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
+// link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
 
-public class Solution {
-    public static int countDigits(int n) {
-        // Write your code here.
-        int num = n;
-        int temp =0;
+public class abc {
+    static int count_digits(int n){
+        int x = n;
         int count = 0;
-
-        while (n > 0) {
-            temp = n % 10;
-            if (temp > 0) {
-                if (num % temp == 0) {
-                    count++;
-                }
-            }
-            n = n / 10;
+        while(x!=0){
+            x= x/10;
+            count++;
         }
         return count;
     }
+    public static void main(String[] args) {
+        int n = 12345;
+        System.out.println(count_digits(n));
+    }
 }
 
+output :- 5
 ```
 
-### Javascript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
+ // link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
 
+function count_digits(n) {
+  let x = n;
+  let count = 0;
+  while (x != 0) {
+    x = Math.floor(x / 10);
+    count++;
+  }
+  return count;
+}
+
+let ans = count_digits(12345);
+
+console.log(ans);
 ```
 
-## Better approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}**Better-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```Java
-// link of problem : 
-public class Solution {
-    public static int countDigits(int n){
-        // Write your code here.
-        String s = Integer.toString(n);
-        return s.length();
+// link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+class HelloWorld {
+    static int count_digits(int n){
+        String str = Integer.toString(n);
+        return str.length();
+    }
+    public static void main(String[] args) {
+        System.out.println(count_digits(12345));
     }
 }
 
 ```
 
-### JavaScript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
-
-function countDigits(n){
-    let x = n.toString();
-    return x.length;
+// link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+function count_digits(n) {
+  let str = n.toString();
+  return str.length;
 }
 
-let n = 123;
-console.log(countDigits(n));
+let ans = count_digits(12345);
+
+console.log(ans);
 ```
 
-## Optimal approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}Optimal-Approachh}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
+// link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+class HelloWorld {
+    static int count_digits(int n){
+        int ans =  (int)Math.floor(Math.log10(n)+1);
+        return ans;
+    }
+    public static void main(String[] args) {
+        System.out.println(count_digits(12345));
+    }
+}
 
-static int count_digits(int n)
-    {
-       int digits = (int) Math.floor(Math.log10(n) + 1);
-        return digits;
-    } 
 ```
 
-### Javascript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
-function count(n){
-	let digits = Math.floor(Math.log10(n) + 1);
-	return digits;
+// link of problem : https://www.codingninjas.com/studio/problems/count-digits_8416387?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+function count_digits(n){
+    let ans = Math.floor(Math.log10(n)+1);
+    return ans;
 }
+
+let ans = count_digits(12345);
+
+console.log(ans);
 ```

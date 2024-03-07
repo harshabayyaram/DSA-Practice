@@ -1,92 +1,137 @@
-Notes in : DSA-general-16
+Notes in : S-step1.4-page-04
 
-# GCD or HCF
+$$
+{\color{red}GCD/HCF}
+$$
 
-## Bruteforce approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}**Bruteforce-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
-
-public class Solution {
-    public static int calcGCD(int n, int m){
-        // Write your code here.
+class HelloWorld {
+  
+    static int gcd(int n1,int n2){
         int ans = 0;
-        for(int i = 1;i<=Math.min(n,m);i++){
-            if(n%i==0 && m%i==0){
-                ans =i;
+        for(int i=1;i<=Math.min(n1,n2);i++){
+            if(n1%i==0 && n2%i==0){
+                ans = i;
             }
         }
         return ans;
     }
-}
-
-
-another approach by changing loop
-
-public class Solution {
-    public static int calcGCD(int n, int m){
-        // Write your code here.
-        int ans = 0;
-        for(int i = Math.min(m,n);i>=1;i--){
-            if(n%i==0 && m%i==0){
-                ans =i;
-		break;
-            }
-        }
-        return ans;
+  
+    public static void main(String[] args) {
+        int n1 = 20;
+        int n2 = 40;
+        System.out.println(gcd(n1,n2));
     }
 }
+
 ```
 
-### Javascript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
-
-function calcGCD(n,m){
+function gcd(n1,n2){
         let ans = 0;
-        for(let i = 1;i<=Math.min(n,m);i++){
-            if(n%i==0 && m%i==0){
-                ans =i;
+        for(let i=1;i<=Math.min(n1,n2);i++){
+            if(n1%i==0 && n2%i==0){
+                ans = i;
             }
         }
         return ans;
-}
+    }
+  
+  
+console.log(gcd(20,40));
+
 ```
 
-## Better approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}**Better-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```Java
-// link of problem : 
-
-
-public class Main {
-  static int gcd(int a, int b) {
-    if (b == 0) {
-      return a;
+class HelloWorld {
+  
+    static int gcd(int n1,int n2){
+        while(n1>0 && n2>0){
+            if(n1>n2) n1 = n1%n2;
+            else n2 = n2%n1;
+        }
+        if(n1==0) return n2;
+        else return n1;
     }
-    return gcd(b, a % b);
-  }
-  public static void main(String args[]) {
-    int a = 4, b = 8;
-    int ans = gcd(a, b);
-    System.out.print("The GCD of the two numbers is "+ans);
-  }
+  
+    public static void main(String[] args) {
+        int n1 = 20;
+        int n2 = 40;
+        System.out.println(gcd(n1,n2));
+    }
 }
+
 ```
 
-### JavaScript
+```java
+class HelloWorld {
+  
+    static int gcd(int n1,int n2){
+        if(n2==0){
+            return n1;
+        }
+        return gcd(n2,n1%n2);
+    }
+  
+    public static void main(String[] args) {
+        int n1 = 20;
+        int n2 = 40;
+        System.out.println(gcd(n1,n2));
+    }
+}
+
+```
+
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
-function gcd(a,b) {
-    if (b == 0) {
-      return a;
+function gcd1(n1,n2){
+    while(n1>0 && n2>0){
+        if(n1>n2) n1 = n1%n2;
+        else n2 = n2%n1;
     }
-    return gcd(b, a % b);
-  }
+    if(n1==0) return n2;
+    else return n1;
+}
+
+function gcd2(n1, n2){
+    if(n2==0){
+        return n1;
+    }
+    return gcd2(n2,n1%n2);
+}
+  
+console.log(gcd1(20,40));
+console.log(gcd2(20,40));
+
 ```

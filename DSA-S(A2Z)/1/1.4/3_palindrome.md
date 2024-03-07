@@ -1,51 +1,66 @@
-Notes in : DSA_Genereal-15 backside
+Notes in : S-Step1.4-page-03
 
-# Palindrome number or not
+$$
+{\color{red}PALINDROME}
+$$
 
-## Bruteforce approach
+---
 
-### Java
+---
+
+$$
+{\color{blue}**Bruteforce-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
-
-public class Solution {
-    public static boolean palindromeNumber(int n){
-        // Write your code here.
-        int original_num = n;
-        int reverse_num = 0;
+class HelloWorld {
+  
+    static boolean palindrome(int n){
+        int original = n;
+        int reversed_number = 0;
+    
         while(n!=0){
-            int rem = n%10;
-            reverse_num = reverse_num *10 +rem;
+            int digit = n%10;
+            reversed_number = reversed_number*10+digit;
             n=n/10;
         }
-
-        if(original_num == reverse_num){
+        if(reversed_number==original){
             return true;
         }
         return false;
-
+    }
+    public static void main(String[] args) {
+        int n =121;
+        System.out.println(palindrome(n));
     }
 }
 ```
 
-### Javascript
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
-    function palindromeNumber(n){
-        let original_num = n;
-        let reverse_num = 0;
+function palindrome(n){
+        let original = n;
+        let reversed_number = 0;
+    
         while(n!=0){
-            int rem = n%10;
-            reverse_num = reverse_num *10 +rem;
-            n=n/10; Math.floor(n/10)
+            let digit = n%10;
+            reversed_number = reversed_number*10+digit;
+            n= Math.floor(n/10);
         }
-
-        if(original_num === reverse_num){
+        if(reversed_number==original){
             return true;
         }
         return false;
-
-    }
+}
+  
+  
+console.log(palindrome(121));
+console.log(palindrome(122));
 ```

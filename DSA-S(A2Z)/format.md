@@ -1,60 +1,77 @@
-Notes in : < page number and location >
+Notes in : < page number >
 
-# 
-$${\color{red}Heading-of-problem}$$
----
----
-$${\color{blue}**Bruteforce-Approachh**}$$
+$$
+{\color{red}Heading-of-problem}
+$$
 
-$${\color{yellow}Java}$$
+---
+
+---
+
+$$
+{\color{blue}**Bruteforce-Approachh**}
+$$
+
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
+
 ```
 
-$${\color{green}JavaScript}$$
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
 
 ```
 
 ---
+
 ---
 
-$${\color{blue}**Better-Approachh**}$$
+$$
+{\color{blue}**Better-Approachh**}
+$$
 
-$${\color{yellow}Java}$$
+$$
+{\color{yellow}Java}
+$$
 
 ```Java
-// link of problem : 
-
 
 ```
 
-$${\color{green}JavaScript}$$
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
 
 ```
 
 ---
+
 ---
 
-$${\color{blue}Optimal-Approachh}$$
+$$
+{\color{blue}Optimal-Approachh}
+$$
 
-$${\color{yellow}Java}$$
+$$
+{\color{yellow}Java}
+$$
 
 ```java
-// link of problem : 
-
 
 ```
 
-$${\color{green}JavaScript}$$
+$$
+{\color{green}JavaScript}
+$$
 
 ```javascript
-// link of problem : 
 
 ```
