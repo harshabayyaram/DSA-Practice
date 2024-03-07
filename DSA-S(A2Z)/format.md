@@ -3,6 +3,7 @@ Notes in : < page number and location >
 # 
 $${\color{red}Heading-of-problem}$$
 ---
+---
 $${\color{blue}**Bruteforce-Approachh**}$$
 
 $${\color{yellow}Java}$$
@@ -18,6 +19,7 @@ $${\color{green}JavaScript}$$
 
 ```
 
+---
 ---
 
 $${\color{blue}**Better-Approachh**}$$
@@ -37,6 +39,7 @@ $${\color{green}JavaScript}$$
 
 ```
 
+---
 ---
 
 $${\color{blue}Optimal-Approachh}$$
